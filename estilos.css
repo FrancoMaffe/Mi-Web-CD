@@ -1,544 +1,418 @@
-*{
-	padding:0;
-	margin:0;
-	text-decoration:none;
-	list-style:none;
-	box-sizing:border-box;
-	font-family:palatino;
-	min-width:0;
-}
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: palatino;
+  min-width: 0; }
 
-h2{
-	background-color:#B99AC6;
-	text-align:center;
-	color:#FFFFFF;
-	padding:30px;
-}
+h2 {
+  background-color: #B99AC6;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 30px; }
 
-.H3__jb{
-	text-align:right;
-	display:block;
-	padding-right:100px;
-	background-color:#B99AC6;
-}
+.H3__jb {
+  text-align: right;
+  display: block;
+  padding-right: 100px;
+  background-color: #B99AC6; }
 
-p{
-	letter-spacing:1px;
-	text-align:justify;
-	word-spacing:5px;
-	line-height:25px;
-}
+p {
+  letter-spacing: 1px;
+  text-align: justify;
+  word-spacing: 5px;
+  line-height: 25px; }
 
-.title{
-	font-size:40px;
-	margin-bottom:60px;
-}
+.title {
+  font-size: 40px;
+  margin-bottom: 60px; }
 
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "header" "div-uno" "div-dos" "div-tres" "div-cuatro" "div-cinco" "p-uno" "p-dos" "p-tres" "ul"; }
 
+.header {
+  grid-area: header;
+  background-color: #E8D9EA; }
 
-.grid-container{
-	display:grid;
-	gap:10px;
-	grid-template-areas:
-	"header"
-	"div-uno"
-	"div-dos"
-	"div-tres"
-	"div-cuatro"
-	"div-cinco"
-	"p-uno"
-	"p-dos"
-	"p-tres"
-	"ul"	
-}
+.div-uno {
+  grid-area: div-uno;
+  background-color: #E8D9EA; }
 
-.header{
-	grid-area:header;
-	background-color:#E8D9EA;
-}
+.div-dos {
+  grid-area: div-dos;
+  background-color: #E8D9EA; }
 
-.div-uno{
-    grid-area:div-uno;
-    background-color:#E8D9EA;
-}
+.div-tres {
+  grid-area: div-tres;
+  background-color: #E8D9EA; }
 
-.div-dos{
-	grid-area:div-dos;
-	background-color:#E8D9EA;
-}
+.div-cuatro {
+  grid-area: div-cuatro;
+  background-color: #E8D9EA; }
 
-.div-tres{
-	grid-area:div-tres;
-	background-color:#E8D9EA;
-}
+.div-cinco {
+  grid-area: div-cinco;
+  background-color: #E8D9EA; }
 
-.div-cuatro{
-	grid-area:div-cuatro;
-	background-color:#E8D9EA;
-}
+.p-uno {
+  grid-area: p-uno;
+  background-color: #E8D9EA; }
 
-.div-cinco{
-	grid-area:div-cinco;
-	background-color:#E8D9EA;
-}
+.p-dos {
+  grid-area: p-dos;
+  background-color: #E8D9EA; }
 
-.p-uno{
-	grid-area:p-uno;
-	background-color:#E8D9EA;
-}
+.p-tres {
+  grid-area: p-tres;
+  background-color: #E8D9EA; }
 
-.p-dos{
-	grid-area:p-dos;
-	background-color:#E8D9EA;
-}
+.ul {
+  grid-area: ul; }
 
-.p-tres{
-	grid-area:p-tres;
-	background-color:#E8D9EA;
-}
-
-.ul{
-	grid-area:ul;
-}
-
-@media (min-width: 600px){
-	.grid-container{
-		grid-template-areas: 
-		"header"
-		"div-uno"
-		"div-dos"
-		"div-tres"
-		"div-cuatro"
-		"div-cinco"
-		"p-unoÍ"
-		"p-dos"
-		"p-tres"
-		"ul"
-	}
-}
-
-
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template-areas: "header" "div-uno" "div-dos" "div-tres" "div-cuatro" "div-cinco" "p-unoÍ" "p-dos" "p-tres" "ul"; } }
 
 /*Pagina Principal*/
+.titulo-inicio {
+  color: #fff;
+  padding: 10px 10px;
+  background-color: #DCBBE0;
+  margin: 30px;
+  display: block;
+  margin-left: 35px;
+  font-family: unset;
+  letter-spacing: 1px; }
 
-.titulo-inicio{
-	color:#fff;
-	padding:10px 10px;
-	background-color:#DCBBE0;
-	margin:30px;
-	display:block;
-	margin-left:35px;
-	font-family:unset;
-	letter-spacing:1px;
-}
+.titulo-inicio-2 {
+  color: #fff;
+  padding: 10px 10px;
+  background-color: #DCBBE0;
+  margin: 30px;
+  display: block;
+  margin-right: 35px;
+  font-family: unset;
+  letter-spacing: 1px; }
 
-.titulo-inicio-2{
-	color:#fff;
-	padding:10px 10px;
-	background-color:#DCBBE0;
-	margin:30px;
-	display:block;
-	margin-right:35px;
-	font-family:unset;
-	letter-spacing:1px;
-}
+nav {
+  background: #B99AC6;
+  height: 100px;
+  width: 100%; }
 
-nav{
-	background:#B99AC6;
-	height:100px;
-	width:100%;
-}
+.enlace {
+  position: absolute;
+  padding: 20px 50px; }
 
-.enlace{
-	position:absolute;
-	padding:20px 50px;
-}
+.logo {
+  height: 90px;
+  width: 180px;
+  margin-left: 50px; }
 
-.logo{
-	height:90px;
-	width:180px;
-	margin-left:50px;
-}
+nav ul {
+  float: right;
+  margin-right: 20px; }
 
-nav ul{
-	float:right;
-	margin-right:20px;
-}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px; }
 
-nav ul li{
-	display:inline-block;
-	line-height:80px;
-	margin:0 5px;
-}
+nav ul li a {
+  color: white;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase; }
 
-nav ul li a{
-	color:white;
-	font-size:18px;
-	padding:7px 13px;
-	border-radius:3px;
-	text-transform:uppercase;
-}
+li a.active, li a:hover {
+  background: #B99AF7;
+  transition: .5s; }
 
-li a.active, li a:hover{
-	background:#B99AF7;
-	transition:.5s;
-}
+.input__jb {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none; }
 
-.input__jb{
-	font-size:30px;
-	color:#fff;
-	float:right;
-	line-height:80px;
-	margin-right:40px;
-	cursor:pointer;
-	display:none;
-}
+#input {
+  display: none; }
 
-#input{
-	display:none;
-}
+.section__jb1 {
+  background: url(https://los40.com/los40/imagenes/2022/04/06/musica/1649236439_282245_1649237104_gigante_normal.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 80px); }
 
-.section__jb1{
-	background:url(https://los40.com/los40/imagenes/2022/04/06/musica/1649236439_282245_1649237104_gigante_normal.jpg);
-	background-size:cover;
-	background-position:center center;
-	height:calc(100vh - 80px);
-}
- 
-@media (max-width: 925px){
-	.enlace{
-		padding-left:20px;
-	}
-	nav ul li a {
-		font-size:16px;
-	}
+@media (max-width: 925px) {
+  .enlace {
+    padding-left: 20px; }
+  nav ul li a {
+    font-size: 16px; } }
 
-}
+@media (max-width: 858px) {
+  .input__jb {
+    display: block; }
+  .ul1 {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #D9B0EB;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s; }
+  nav .ul1 li {
+    display: block;
+    margin: 50px 0;
+    line-height: 300px; }
+  nav .ul1 li a {
+    font-size: 20px; }
+  li a:hover li a.active {
+    background: none;
+    color: #D9B0EB; }
+  #check:checked ~ .ul1 {
+    left: 0; } }
 
-@media (max-width:858px){
-	.input__jb{
-		display:block;
-	}
-	.ul1{
-		position:fixed;
-		width:100%;
-		height:100vh;
-		background:#D9B0EB;
-		top:80px;
-		left:-100%;
-		text-align:center;
-		transition:all .5s;
-	}
-	nav .ul1 li{
-		display:block;
-		margin:50px 0;
-		line-height:300px; 
-	}
-	nav .ul1 li a{
-		font-size:20px;
-	}
-	li a:hover li a.active{
-		background:none;
-		color:#D9B0EB; 
-	}
-	#check:checked ~ .ul1{
-		left:0;
-	}
-}
-
-@media (max-width:488px){
-	.input__jb{
-		display:block;
-	}
-	.ul2{
-		position:fixed;
-		width:100%;
-		height:100vh;
-		background:#D9B0EB;
-		top:80px;
-		left:-100%;
-		text-align:center;
-		transition:all .5s;
-	}
-	nav .ul2 li{
-		display:block;
-		margin:50px 0;
-		line-height:300px; 
-	}
-	nav .ul2 li a{
-		font-size:20px;
-	}
-	li a:hover li a.active{
-		background:none;
-		color:#D9B0EB; 
-	}
-	#check:checked ~ .ul2{
-		left:0;
-	}
-}
-
-
+@media (max-width: 488px) {
+  .input__jb {
+    display: block; }
+  .ul2 {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #D9B0EB;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s; }
+  nav .ul2 li {
+    display: block;
+    margin: 50px 0;
+    line-height: 300px; }
+  nav .ul2 li a {
+    font-size: 20px; }
+  li a:hover li a.active {
+    background: none;
+    color: #D9B0EB; }
+  #check:checked ~ .ul2 {
+    left: 0; } }
 
 /*Pagina de historia*/
+.section__jb2 {
+  background: url(https://papers.co/wallpaper/papers.co-hg48-justin-bieber-music-singer-celebrity-36-3840x2400-4k-wallpaper.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 80px); }
 
-.section__jb2{
-	background:url(https://papers.co/wallpaper/papers.co-hg48-justin-bieber-music-singer-celebrity-36-3840x2400-4k-wallpaper.jpg);
-	background-size:cover;
-	background-position:center center;
-	height:calc(100vh - 80px);
-}
+.titulo-foto {
+  font-size: 3rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8); }
 
-.titulo-foto{
-	font-size:3rem;
-	color:white;
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform:translate(-50%, -50%);
-	text-shadow:0 0 8px rgba(0,0,0,0.8) 
-}
+.div-uno {
+  width: 100%;
+  margin: auto;
+  padding: 40px;
+  background-color: #E8D9EA;
+  border-top: 6px #B99AC6; }
 
-.div-uno{
-	width:100%;
-	margin:auto;
-	padding:40px;
-	background-color:#E8D9EA;
-	border-top:6px #B99AC6;
-}
+.div-uno img {
+  width: 350px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  padding: 10px; }
 
-.div-uno img{
-	width:350px;
-	float:left;
-	margin-right:20px;
-	margin-bottom:40px;
-	padding:10px;
-}
+.div-uno p {
+  font-size: 18px;
+  font-weight: 300; }
 
-.div-uno p{
-    font-size:18px;
-    font-weight:300;
-}
+.div-dos {
+  width: 100%;
+  margin: auto;
+  padding: 50px;
+  background-color: #E8D9EA;
+  border-top: 6px #B99AC6; }
 
+.div-dos img {
+  width: 310px;
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  padding: 15px; }
 
-.div-dos{
-	width:100%;
-	margin:auto;
-	padding:50px;
-	background-color:#E8D9EA;
-	border-top:6px #B99AC6;
-}
-
-.div-dos img{
-	width:310px;
-	float:right;
-	margin-right:20px;
-	margin-bottom:40px;
-	padding:15px;
-}
-
-.div-dos p{
-	font-size:18px;
-    font-weight:300;
-}
-
-
+.div-dos p {
+  font-size: 18px;
+  font-weight: 300; }
 
 /*Pagina de Discografía*/
+.section__jb3 {
+  background: url(https://wallpapercave.com/wp/wp8980551.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 80px); }
 
-.section__jb3{
-	background:url(https://wallpapercave.com/wp/wp8980551.jpg);
-	background-size:cover;
-	background-position:center center;
-	height:calc(100vh - 80px);
-}
+.div-tres {
+  width: 100%;
+  margin: auto;
+  padding: 50px;
+  background-color: #E8D9EA;
+  border-top: 6px #B99AC6; }
 
-.div-tres{
-	width:100%;
-	margin:auto;
-	padding:50px;
-	background-color:#E8D9EA;
-	border-top:6px #B99AC6;
-}
+.div-tres img {
+  width: 310px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  padding: 30px; }
 
-.div-tres img{
-	width:310px;
-	float:left;
-	margin-right:20px;
-	margin-bottom:40px;
-	padding:30px;
-}
+.div-tres p {
+  font-size: 18px;
+  font-weight: 300;
+  padding: 25px; }
 
-.div-tres p{
-	font-size:18px;
-    font-weight:300;
-    padding:25px;
-}
+.div-cuatro {
+  width: 100%;
+  margin: auto;
+  padding: 50px;
+  background-color: #E8D9EA;
+  border-top: 6px #B99AC6; }
 
-.div-cuatro{
-	width:100%;
-	margin:auto;
-	padding:50px;
-	background-color:#E8D9EA;
-	border-top:6px #B99AC6;
-}
+.div-cuatro img {
+  width: 310px;
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  padding: 25px; }
 
-.div-cuatro img{
-	width:310px;
-	float:right;
-	margin-right:20px;
-	margin-bottom:40px;
-	padding:25px;
-}
+.div-cuatro p {
+  font-size: 18px;
+  font-weight: 300;
+  padding: 25px; }
 
-.div-cuatro p{
-	font-size:18px;
-    font-weight:300;
-    padding:25px;
-}
+.div-cinco {
+  width: 100%;
+  margin: auto;
+  padding: 50px;
+  background-color: #E8D9EA;
+  border-top: 6px #B99AC6; }
 
-.div-cinco{
-	width:100%;
-	margin:auto;
-	padding:50px;
-	background-color:#E8D9EA;
-	border-top:6px #B99AC6;
-}
+.div-cinco img {
+  width: 310px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  padding: 30px; }
 
-.div-cinco img{
-	width:310px;
-	float:left;
-	margin-right:20px;
-	margin-bottom:40px;
-	padding:30px;
-}
-
-.div-cinco p{
-	font-size:18px;
-    font-weight:300;
-    padding:25px;
-}
+.div-cinco p {
+  font-size: 18px;
+  font-weight: 300;
+  padding: 25px; }
 
 /*Pagina de Logros*/
+.section__jb4 {
+  background: url(https://images.hdqwalls.com/wallpapers/justin-bieber-2020-4k-8u.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 80px); }
 
-.section__jb4{
-	background:url(https://images.hdqwalls.com/wallpapers/justin-bieber-2020-4k-8u.jpg);
-	background-size:cover;
-	background-position:center center;
-	height:calc(100vh - 80px);
-}
+.col-sm-6 {
+  margin: auto;
+  padding: 30px; }
 
-.col-sm-6{
-	margin:auto;
-	padding:30px;
-}
+.card-title {
+  background-color: #E8D9EA;
+  text-align: center; }
 
-.card-title{
-	background-color:#E8D9EA;
-	text-align:center;
-}
-
-.card-text{
-	letter-spacing:0px;
-}
-
+.card-text {
+  letter-spacing: 0px; }
 
 /*Pagina de Contacto*/
+.section__jb5 {
+  background: url(https://www.wallpaperup.com/uploads/wallpapers/2019/10/25/1349590/dc144210541782be899981b1daa8c1b0.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 80px); }
 
-.section__jb5{
-	background:url(https://www.wallpaperup.com/uploads/wallpapers/2019/10/25/1349590/dc144210541782be899981b1daa8c1b0.jpg);
-	background-size:cover;
-	background-position:center center;
-	height:calc(100vh - 80px);
-}
+.body-contacto {
+  background-color: #E8D9EA; }
 
-.body-contacto{
-background-color:#E8D9EA;
-}
+.flex-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #B99AC6;
+  margin: 50px 50px;
+  padding: 20px; }
 
-.flex-container{
-	display:flex;
-    align-items:center;
-    flex-wrap:wrap;
-    justify-content:center;
-    background:#B99AC6;
-    margin:50px 50px;
-    padding:20px;
-}
+.form {
+  min-width: 400px;
+  flex: 1;
+  text-align: center;
+  padding: 30px;
+  order: 2; }
 
-.form{
-	min-width:400px;
-	flex:1;
-	text-align:center;
-	padding:30px;
-	order:2;
-}
+.form-input {
+  width: 100%;
+  padding: 7px;
+  margin: 14px 0;
+  border: none;
+  border-top: 3px solid #E8D9EA;
+  background: transparent;
+  color: #000; }
 
-.form-input{
-	width:100%;
-	padding:7px;
-	margin:14px 0;
-	border:none;
-	border-top:3px solid #E8D9EA;
-	background:transparent;
-	color:#000;
-}
+.form-input:focus {
+  background: linear-gradient(to bottom, transparent, #E8D9EA);
+  outline: none;
+  border-top: 3px solid #DCBBE0; }
 
-.form-input:focus{
-	background:linear-gradient(to bottom,transparent,#E8D9EA);
-	outline:none;
-	border-top:3px solid #DCBBE0;
+.form textarea {
+  min-height: 140px;
+  resize: none; }
 
-}
+.form-img {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  min-width: 200px;
+  max-width: 400px;
+  order: 1; }
 
-.form textarea{
-	min-height:140px;
-	resize:none;
-}
+.form-img div {
+  padding: 10px; }
 
-.form-img{
-	flex:1;
-	padding:10px;
-	display:flex;
-	min-width:200px;
-	max-width:400px;
-	order:1; 
-}
+.img-container {
+  margin: auto; }
 
-.form-img div{
-	padding:10px;
-}
+.img-container div {
+  background-color: #E8D9EA;
+  border-radius: 50%;
+  text-align: center;
+  padding: 40px; }
 
-.img-container{
-	margin:auto;
-}
+.form-img img {
+  width: 80%;
+  margin: auto; }
 
-.img-container div{
-	background-color:#E8D9EA;
-	border-radius:50%;
-	text-align:center;
-	padding:40px;
+.form input[type="submit"] {
+  background-color: #DCBBE0;
+  border-bottom: none;
+  padding: 12px; }
 
-}
-
-.form-img img{
-	width:80%;
-	margin:auto;
-}
-
-.form input[type="submit"]{
-	background-color:#DCBBE0;
-	border-bottom:none;
-	padding:12px;
-}
-
-.form input[type="submit"]:hover{
-	background-color:#F5BAFD;
-	border-bottom:none;
-	padding:12px;
-}
-
-
-
-
-
-
+.form input[type="submit"]:hover {
+  background-color: #F5BAFD;
+  border-bottom: none;
+  padding: 12px; }
