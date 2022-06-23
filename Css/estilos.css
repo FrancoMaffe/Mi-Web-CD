@@ -8,6 +8,7 @@
   font-family: palatino;
   min-width: 0; }
 
+/* Colores de la pagina web */
 h2 {
   background-color: #B99AC6;
   text-align: center;
@@ -408,7 +409,7 @@ li a.active, li a:hover {
   margin: auto; }
 
 .form input[type="submit"] {
-  background-color: #DCBBE0;
+  background-color: #B99AC6;
   border-bottom: none;
   padding: 12px; }
 
