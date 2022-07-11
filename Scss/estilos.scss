@@ -11,6 +11,7 @@
 $violeta1:#B99AC6;
 $blanco:#E8D9EA;
 $lila:#D9B0EB;
+$blanco2:#F5BAFD;
 
 
 h2{
@@ -43,7 +44,7 @@ p{
 
 .grid-container{
 	display:grid;
-	gap:10px;
+	gap:5px;
 	grid-template-areas:
 	"header"
 	"div-uno"
@@ -102,10 +103,6 @@ p{
 	background-color:$blanco;
 }
 
-.ul{
-	grid-area:ul;
-}
-
 @media (min-width: 600px){
 	.grid-container{
 		grid-template-areas: 
@@ -118,7 +115,6 @@ p{
 		"p-unoÍ"
 		"p-dos"
 		"p-tres"
-		"ul"
 	}
 }
 
@@ -150,19 +146,18 @@ p{
 
 nav{
 	background:$violeta1;
-	height:100px;
+	height:80px;
 	width:100%;
 }
 
-.enlace{
+.enlace1{
 	position:absolute;
 	padding:20px 50px;
 }
 
 .logo{
-	height:90px;
-	width:180px;
-	margin-left:50px;
+	height:80px;
+	width: 150px;
 }
 
 nav ul{
@@ -189,7 +184,7 @@ li a.active, li a:hover{
 	transition:.5s;
 }
 
-.input__jb{
+.checkbtn{
 	font-size:30px;
 	color:#fff;
 	float:right;
@@ -199,20 +194,22 @@ li a.active, li a:hover{
 	display:none;
 }
 
-#input{
+#check{
 	display:none;
 }
 
+
 .section__jb1{
-	background:url(https://los40.com/los40/imagenes/2022/04/06/musica/1649236439_282245_1649237104_gigante_normal.jpg);
+	background:url(https://los40.com/los40/imagenes/2022/04/06/musica/1649236439_282245_1649237104_gigante_normal.jpg) no-repeat;
 	background-size:cover;
 	background-position:center center;
 	height:calc(100vh - 80px);
 }
- 
-@media (max-width: 925px){
+
+
+@media (max-width: 952px){
 	.enlace{
-		padding-left:20px;
+		padding-left:50px;
 	}
 	nav ul li a {
 		font-size:16px;
@@ -221,45 +218,45 @@ li a.active, li a:hover{
 }
 
 @media (max-width:858px){
-	.input__jb{
+	.checkbtn{
 		display:block;
 	}
-	.ul1{
+	ul{
 		position:fixed;
 		width:100%;
 		height:100vh;
-		background:$lila;
+		background:#B58CBB;
 		top:80px;
 		left:-100%;
 		text-align:center;
 		transition:all .5s;
 	}
-	nav .ul1 li{
+	nav ul li{
 		display:block;
 		margin:50px 0;
-		line-height:300px; 
+		line-height:100px; 
 	}
-	nav .ul1 li a{
+	nav ul li a{
 		font-size:20px;
 	}
 	li a:hover li a.active{
 		background:none;
-		color:$lila; 
+		color:$blanco; 
 	}
-	#check:checked ~ .ul1{
+	#check:checked ~ ul{
 		left:0;
 	}
 }
 
 @media (max-width:488px){
-	.input__jb{
+	.checkbox{
 		display:block;
 	}
 	.ul2{
 		position:fixed;
 		width:100%;
 		height:100vh;
-		background:$lila;
+		background:$blanco;
 		top:80px;
 		left:-100%;
 		text-align:center;
@@ -275,15 +272,12 @@ li a.active, li a:hover{
 	}
 	li a:hover li a.active{
 		background:none;
-		color:$lila; 
+		color:$blanco; 
 	}
 	#check:checked ~ .ul2{
 		left:0;
 	}
 }
-
-
-
 /*Pagina de historia*/
 
 .section__jb2{
@@ -351,7 +345,7 @@ li a.active, li a:hover{
 /*Pagina de Discografía*/
 
 .section__jb3{
-	background:url(https://wallpapercave.com/wp/wp8980551.jpg);
+	background:url(https://www.teahub.io/photos/full/199-1998469_justin-bieber-hd-4k.jpg);
 	background-size:cover;
 	background-position:center center;
 	height:calc(100vh - 80px);
@@ -426,7 +420,7 @@ li a.active, li a:hover{
 /*Pagina de Logros*/
 
 .section__jb4{
-	background:url(https://images.hdqwalls.com/wallpapers/justin-bieber-2020-4k-8u.jpg);
+	background:url(https://www.teahub.io/photos/full/199-1999058_justin-bieber-wallpaper-laptop.jpg);
 	background-size:cover;
 	background-position:center center;
 	height:calc(100vh - 80px);
@@ -450,7 +444,7 @@ li a.active, li a:hover{
 /*Pagina de Contacto*/
 
 .section__jb5{
-	background:url(https://www.wallpaperup.com/uploads/wallpapers/2019/10/25/1349590/dc144210541782be899981b1daa8c1b0.jpg);
+	background:url(https://www.xtrafondos.com/descargar.php?id=4479&resolucion=2560x1440);
 	background-size:cover;
 	background-position:center center;
 	height:calc(100vh - 80px);
@@ -466,7 +460,7 @@ background-color:$blanco;
     flex-wrap:wrap;
     justify-content:center;
     background:$violeta1;
-    margin:50px 50px;
+    margin:px px;
     padding:20px;
 }
 
@@ -474,14 +468,14 @@ background-color:$blanco;
 	min-width:400px;
 	flex:1;
 	text-align:center;
-	padding:30px;
+	padding:60px;
 	order:2;
 }
 
 .form-input{
 	width:100%;
 	padding:7px;
-	margin:14px 0;
+	margin:6px 0;
 	border:none;
 	border-top:3px solid $blanco;
 	background:transparent;
@@ -504,7 +498,7 @@ background-color:$blanco;
 	flex:1;
 	padding:10px;
 	display:flex;
-	min-width:200px;
+	min-width:300px;
 	max-width:400px;
 	order:1; 
 }
@@ -521,7 +515,7 @@ background-color:$blanco;
 	background-color:$blanco;
 	border-radius:50%;
 	text-align:center;
-	padding:40px;
+	padding:350px;
 
 }
 
@@ -540,4 +534,83 @@ background-color:$blanco;
 	background-color:#F5BAFD;
 	border-bottom:none;
 	padding:12px;
+}
+
+/*Fotter*/
+
+.pie-pagina{
+	width: 100%;
+	background-color: #B58CBB;
+	align-self: flex-end;
+}
+
+.pie-pagina .grupo-1{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 50px;
+	padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+	width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+	color: #fff;
+	margin-bottom:25px;
+	font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+	display: inline-block;
+	text-decoration: none;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	color: #fff;
+	margin-right: 10px;
+	background-color: #B58CBB;
+	text-align: center;
+	transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+	color: #F5BAFD;
+}
+
+.pie-pagina .grupo-2{
+	background-color: #B99AC6;
+	padding: 15px 10px;
+	text-align: center;
+	color: #fff;
+}
+
+.pie-pagina .grupo-2 small{
+	font-size: 15px;
+}
+
+@media screen and (max-width:800px){
+	.pie-pagina .grupo-1{
+		width: 90%;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 30px;
+		padding: 35px 0px;
+
+	}
 }

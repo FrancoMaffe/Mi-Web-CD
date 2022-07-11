@@ -33,7 +33,7 @@ p {
 
 .grid-container {
   display: grid;
-  gap: 10px;
+  gap: 5px;
   grid-template-areas: "header" "div-uno" "div-dos" "div-tres" "div-cuatro" "div-cinco" "p-uno" "p-dos" "p-tres" "ul"; }
 
 .header {
@@ -72,12 +72,9 @@ p {
   grid-area: p-tres;
   background-color: #E8D9EA; }
 
-.ul {
-  grid-area: ul; }
-
 @media (min-width: 600px) {
   .grid-container {
-    grid-template-areas: "header" "div-uno" "div-dos" "div-tres" "div-cuatro" "div-cinco" "p-unoÍ" "p-dos" "p-tres" "ul"; } }
+    grid-template-areas: "header" "div-uno" "div-dos" "div-tres" "div-cuatro" "div-cinco" "p-unoÍ" "p-dos" "p-tres"; } }
 
 /*Pagina Principal*/
 .titulo-inicio {
@@ -102,17 +99,16 @@ p {
 
 nav {
   background: #B99AC6;
-  height: 100px;
+  height: 80px;
   width: 100%; }
 
-.enlace {
+.enlace1 {
   position: absolute;
   padding: 20px 50px; }
 
 .logo {
-  height: 90px;
-  width: 180px;
-  margin-left: 50px; }
+  height: 80px;
+  width: 150px; }
 
 nav ul {
   float: right;
@@ -134,7 +130,7 @@ li a.active, li a:hover {
   background: #B99AF7;
   transition: .5s; }
 
-.input__jb {
+.checkbtn {
   font-size: 30px;
   color: #fff;
   float: right;
@@ -143,53 +139,53 @@ li a.active, li a:hover {
   cursor: pointer;
   display: none; }
 
-#input {
+#check {
   display: none; }
 
 .section__jb1 {
-  background: url(https://los40.com/los40/imagenes/2022/04/06/musica/1649236439_282245_1649237104_gigante_normal.jpg);
+  background: url(https://los40.com/los40/imagenes/2022/04/06/musica/1649236439_282245_1649237104_gigante_normal.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
   height: calc(100vh - 80px); }
 
-@media (max-width: 925px) {
+@media (max-width: 952px) {
   .enlace {
-    padding-left: 20px; }
+    padding-left: 50px; }
   nav ul li a {
     font-size: 16px; } }
 
 @media (max-width: 858px) {
-  .input__jb {
+  .checkbtn {
     display: block; }
-  .ul1 {
+  ul {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #D9B0EB;
+    background: #B58CBB;
     top: 80px;
     left: -100%;
     text-align: center;
     transition: all .5s; }
-  nav .ul1 li {
+  nav ul li {
     display: block;
     margin: 50px 0;
-    line-height: 300px; }
-  nav .ul1 li a {
+    line-height: 100px; }
+  nav ul li a {
     font-size: 20px; }
   li a:hover li a.active {
     background: none;
-    color: #D9B0EB; }
-  #check:checked ~ .ul1 {
+    color: #E8D9EA; }
+  #check:checked ~ ul {
     left: 0; } }
 
 @media (max-width: 488px) {
-  .input__jb {
+  .checkbox {
     display: block; }
   .ul2 {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #D9B0EB;
+    background: #E8D9EA;
     top: 80px;
     left: -100%;
     text-align: center;
@@ -202,7 +198,7 @@ li a.active, li a:hover {
     font-size: 20px; }
   li a:hover li a.active {
     background: none;
-    color: #D9B0EB; }
+    color: #E8D9EA; }
   #check:checked ~ .ul2 {
     left: 0; } }
 
@@ -260,7 +256,7 @@ li a.active, li a:hover {
 
 /*Pagina de Discografía*/
 .section__jb3 {
-  background: url(https://wallpapercave.com/wp/wp8980551.jpg);
+  background: url(https://www.teahub.io/photos/full/199-1998469_justin-bieber-hd-4k.jpg);
   background-size: cover;
   background-position: center center;
   height: calc(100vh - 80px); }
@@ -324,7 +320,7 @@ li a.active, li a:hover {
 
 /*Pagina de Logros*/
 .section__jb4 {
-  background: url(https://images.hdqwalls.com/wallpapers/justin-bieber-2020-4k-8u.jpg);
+  background: url(https://www.teahub.io/photos/full/199-1999058_justin-bieber-wallpaper-laptop.jpg);
   background-size: cover;
   background-position: center center;
   height: calc(100vh - 80px); }
@@ -342,7 +338,7 @@ li a.active, li a:hover {
 
 /*Pagina de Contacto*/
 .section__jb5 {
-  background: url(https://www.wallpaperup.com/uploads/wallpapers/2019/10/25/1349590/dc144210541782be899981b1daa8c1b0.jpg);
+  background: url(https://www.xtrafondos.com/descargar.php?id=4479&resolucion=2560x1440);
   background-size: cover;
   background-position: center center;
   height: calc(100vh - 80px); }
@@ -356,20 +352,20 @@ li a.active, li a:hover {
   flex-wrap: wrap;
   justify-content: center;
   background: #B99AC6;
-  margin: 50px 50px;
+  margin: px px;
   padding: 20px; }
 
 .form {
   min-width: 400px;
   flex: 1;
   text-align: center;
-  padding: 30px;
+  padding: 60px;
   order: 2; }
 
 .form-input {
   width: 100%;
   padding: 7px;
-  margin: 14px 0;
+  margin: 6px 0;
   border: none;
   border-top: 3px solid #E8D9EA;
   background: transparent;
@@ -388,7 +384,7 @@ li a.active, li a:hover {
   flex: 1;
   padding: 10px;
   display: flex;
-  min-width: 200px;
+  min-width: 300px;
   max-width: 400px;
   order: 1; }
 
@@ -402,7 +398,7 @@ li a.active, li a:hover {
   background-color: #E8D9EA;
   border-radius: 50%;
   text-align: center;
-  padding: 40px; }
+  padding: 350px; }
 
 .form-img img {
   width: 80%;
@@ -417,3 +413,68 @@ li a.active, li a:hover {
   background-color: #F5BAFD;
   border-bottom: none;
   padding: 12px; }
+
+/*Fotter*/
+.pie-pagina {
+  width: 100%;
+  background-color: #B58CBB;
+  align-self: flex-end; }
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px; }
+
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.pie-pagina .grupo-1 .box figure img {
+  width: 250px; }
+
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px; }
+
+.pie-pagina .grupo-1 .box p {
+  color: #fff;
+  margin-bottom: 10px; }
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #B58CBB;
+  text-align: center;
+  transition: all 300ms ease; }
+
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: #F5BAFD; }
+
+.pie-pagina .grupo-2 {
+  background-color: #B99AC6;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff; }
+
+.pie-pagina .grupo-2 small {
+  font-size: 15px; }
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px; } }
